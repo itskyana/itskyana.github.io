@@ -1,0 +1,388 @@
+/* Font Online */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
+/* Font Offline */
+@font-face {
+	font-family: 'Poppins';
+	src: url('../assets/font/Poppins-Regular.ttf');
+	src: url('../assets/font/Poppins-Regular.ttf') format('ttf'),
+	     url('../assets/font/Poppins-Regular.ttf') format('truetype');
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #070606 ;
+}
+
+*::selection {
+    background-color: #ffd803;
+}
+
+textarea:focus, input:focus{
+    -webkit-transition: .3s;
+    transition: .3s;
+    outline: none;
+    border: 1px solid #ffd803;
+}
+/* End CSS Reset */
+
+/* CSS Content */
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: #fffffe;
+    line-height: 1.65;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/* Header CSS */
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #fffffe;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+
+
+header .logo {
+    display: flex;
+    width: 20%;
+    font-size: 1.2em;
+}
+
+header .logo img {
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    width: 30%;
+    justify-content: space-between;
+}
+
+header ul li a {
+    color: #272343 ;
+    text-decoration: none;
+    font-size: .9em;
+}
+
+header ul li a:hover {
+    transition: 0.2s;
+    color: #ffd803;
+}
+/* End Header */
+
+/* Jumbotron CSS */
+.jumbotron {
+    color: #272343;
+}
+
+.jumbotron .title h1 {
+    font-style: normal;
+    font-size: 2.5em;
+    font-weight: normal;
+    padding-top: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-sizing: border-box;
+    color: #272343;
+}
+
+.jumbotron .title p {
+    font-size: 1em;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-sizing: border-box;
+    color: #2d334a;
+}
+
+.jumbotron img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: .5rem;
+    padding: 0 2rem;
+}
+
+.jumbotron .btn-slideshow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.jumbotron .btn-slideshow button {
+
+    margin-top: 1rem;
+    width: auto;
+    padding: .5rem 1rem;
+    text-align: center;
+    height: 2rem;
+    background-color: #ffd803 ;
+    border: 1px solid #ffd803 ;
+    color: white;
+    border-radius: .5rem;
+}
+
+.jumbotron .btn-slideshow button:hover {
+    transition: 0.3s;
+    background-color: #ffd903dc;
+}
+/* End Jumbotron */
+
+/* Our Headquarter CSS */
+.our_headquarter {
+    margin: 0 2rem;
+    padding: 4rem 0rem;
+    box-sizing: border-box;
+    margin-top: 2rem;
+}
+
+.our_headquarter h1 {
+    font-style: normal;
+    font-size: 2em;
+    font-weight: normal;
+    margin-bottom: 2rem;
+    color: #272343;
+}
+
+.img-our_headquarter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+.img-our_headquarter-1 {
+    flex: auto;
+}
+
+.img-our_headquarter-2 {
+    flex: auto;
+}
+
+.img-our_headquarter-3 {
+    flex: auto;
+}
+
+.img-our_headquarter-4 {
+    flex: auto;
+}
+
+/* End Our Headquarter */
+
+
+/* Message CSS */
+.message {
+    margin-top: 3rem;
+    padding: 1rem;
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.message h1 {
+    font-style: normal;
+    font-size: 2em;
+    font-weight: normal;
+    margin-bottom: 2rem;
+    color: #272343;
+}
+
+.input {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.output {
+    flex: 1;
+    border: 1px solid #5d646f ;
+    background-color: #5d646f;
+    border-radius: 1rem;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: auto;
+    color: #ffd803;
+}
+
+.output p {
+    color: #fffffe;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.col-label {
+    flex: 30%;
+}
+
+.col-input {
+    flex: 70%;
+}
+
+
+.col-area {
+    flex: 70%;
+}
+
+input {
+    padding: 1em;
+    border: 1px solid silver;
+    border-radius: .5rem;
+}
+
+input[type=submit] {
+    background-color: #ffd803  ;
+    border: 1px solid #ffd803  ;
+    color: white;
+    border-radius: .5rem;
+}
+
+input[type=submit]:hover {
+    transition: 0.3s;
+    background-color: #ffd903dc;
+    border: 1px solid #ffd803  ;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #ffd803  ;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+textarea {
+    padding: 1em;
+    border: 1px solid silver;
+    border-radius: .5rem;
+}
+
+.radio-group label {
+    margin-left: .5rem;
+}
+
+.button-form input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ffd803;
+    border-radius: .5rem;
+    color: white;
+}
+
+.button-form input:hover{
+    transition: 0.3s;
+    border: 1px solid #ffd903dc;
+}
+/* End Message */
+
+/* Footer CSS */
+footer {
+    margin-top: 3rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    text-align: end;
+    background-color: #ffd803 ;
+}
+
+footer p {
+    font-size: 1em;
+    color: #272343;
+}
+/* End Footer */
+
+/* End Content */
+
+
+/* Responsive */
+/* Tablet and Phone */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        position: relative;
+    }
+
+    header .logo{
+        align-items: center;
+        justify-content: center;
+        padding: 5px 10px;
+    }
+
+    header ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header ul li a{
+        padding: 10px;
+        font-size: .7em;
+    }
+
+    .jumbotron .title h1 {
+        padding-top: 1rem;
+    }
+
+    .message {
+        display: block;
+    }
+
+    
+    footer p {
+        font-size: .8em;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 992px) {
+    header ul {
+        width: 50%;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+}
+/* End Responsive */
